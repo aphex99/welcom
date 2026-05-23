@@ -26,11 +26,12 @@ export default [
                 {
                     groups: [
                         ["^react", "^motion", "^@?\\w"],
-                        ["^@/shared"],
-                        ["^@/entities"],
-                        ["^@/features"],
-                        ["^@/widgets"],
+                        ["^@/app"],
                         ["^@/pages"],
+                        ["^@/widgets"],
+                        ["^@/features"],
+                        ["^@/entities"],
+                        ["^@/shared"],
                         ["^\\u0000"],
                         ["^\\."],
                     ],

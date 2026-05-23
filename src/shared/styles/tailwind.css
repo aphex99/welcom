@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+    --spacing-skeleton-gap: var(--skeleton-gap);
+    --spacing-skeleton-lheight: var(--skeleton-lheight);
+    --spacing-skeleton-width: var(--skeleton-width);
+}

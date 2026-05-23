@@ -1,6 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
+
+import "@/shared/styles/tailwind.css";
+import "@/shared/styles/global.scss";
+
+import App from "./App";
 
 const root = document.getElementById("root");
 
