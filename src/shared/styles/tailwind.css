@@ -1,7 +1,32 @@
 @import "tailwindcss";
 
 @theme {
-    --spacing-skeleton-gap: var(--skeleton-gap);
-    --spacing-skeleton-lheight: var(--skeleton-lheight);
-    --spacing-skeleton-width: var(--skeleton-width);
+  --spacing-skeleton-gap: var(--skeleton-gap);
+  --spacing-skeleton-lheight: var(--skeleton-lheight);
+  --spacing-skeleton-width: var(--skeleton-width);
+  --color-skeleton-color: var(--color-text);
+
+  --ease-spring-soft: linear(
+    0,
+    0.2375,
+    0.5904,
+    1.0161,
+    1.0161,
+    1.0261,
+    1.0352,
+    1.0216,
+    1.0062,
+    1.0025,
+    1.0006,
+    0.9999,
+    1
+  );
+}
+
+@theme inline {
+  --color-theme-bg: var(--color-bg);
+  --color-theme-border: var(--color-table-border);
+  --color-theme-bg-table-row-even: var(--color-bg-table-row-even);
+  --color-theme-text-color: var(--color-text);
+  --color-theme-table-bg-header: var(--color-table-bg-header);
 }

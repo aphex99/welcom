@@ -31,7 +31,8 @@
         "sass": "^1.99.0",
         "typescript": "~6.0.2",
         "typescript-eslint": "^8.59.2",
-        "vite": "^8.0.10"
+        "vite": "^8.0.10",
+        "vite-plugin-svgr": "^5.2.0"
     },
     "dependencies": {
         "@tailwindcss/vite": "^4.3.0",
@@ -43,6 +44,7 @@
         "react-error-boundary": "^6.1.1",
         "react-hot-toast": "^2.6.0",
         "react-spinners": "^0.17.0",
-        "tailwindcss": "^4.3.0"
+        "tailwindcss": "^4.3.0",
+        "zustand": "^5.0.14"
     }
 }

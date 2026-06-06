@@ -1,21 +1,24 @@
-import { ErrorBoundary } from "react-error-boundary";
 import { Toaster } from "react-hot-toast";
-import { QueryClientProvider } from "@tanstack/react-query";
 
-import UsersTablePage from "@/pages/users/UsersTablePage";
+import { AppRouter } from "@/app/AppRouter";
+import AppProviders from "@/app/providers/AppProviders";
+import { Router } from "@/app/router/Router";
 
-import { queryClient } from "@/shared/api/client";
-import ErrorFallback from "@/shared/ui/error-fallback/ErrorFallback";
+import AppLayout from "@/widgets/AppLayout";
+import Header from "@/widgets/Header";
 
 const App = () => {
-    return (
-        <QueryClientProvider client={queryClient}>
-            <ErrorBoundary FallbackComponent={ErrorFallback}>
-                <Toaster />
-                <UsersTablePage />
-            </ErrorBoundary>
-        </QueryClientProvider>
-    );
+  return (
+    <AppProviders>
+      <AppLayout>
+        <Toaster />
+        <Router>
+          <Header />
+          <AppRouter />
+        </Router>
+      </AppLayout>
+    </AppProviders>
+  );
 };
 
 export default App;
