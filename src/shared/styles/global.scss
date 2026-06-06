@@ -1,44 +1,58 @@
 @font-face {
-    font-family: "GoogleSans";
-    src:
-        local("GoogleSans-Regular"),
-        url("../assets/fonts/GoogleSans-Regular.ttf") format("truetype");
-    font-weight: 400;
+  font-family: "GoogleSans";
+  src:
+    local("GoogleSans-Regular"),
+    url("../assets/fonts/GoogleSans-Regular.ttf") format("truetype");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: "GoogleSans";
-    src:
-        local("GoogleSans-Medium"),
-        url("../assets/fonts/GoogleSans-Medium.ttf") format("truetype");
-    font-weight: 500;
+  font-family: "GoogleSans";
+  src:
+    local("GoogleSans-Medium"),
+    url("../assets/fonts/GoogleSans-Medium.ttf") format("truetype");
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: "GoogleSans";
-    src:
-        local("GoogleSans-SemiBold"),
-        url("../assets/fonts/GoogleSans-SemiBold.ttf") format("truetype");
-    font-weight: 600;
+  font-family: "GoogleSans";
+  src:
+    local("GoogleSans-SemiBold"),
+    url("../assets/fonts/GoogleSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
 }
 
 @font-face {
-    font-family: "GoogleSans";
-    src:
-        local("GoogleSans-Bold"),
-        url("../assets/fonts/GoogleSans-Bold.ttf") format("truetype");
-    font-weight: 700;
+  font-family: "GoogleSans";
+  src:
+    local("GoogleSans-Bold"),
+    url("../assets/fonts/GoogleSans-Bold.ttf") format("truetype");
+  font-weight: 700;
 }
 
 :root {
-    --skeleton-gap: 0px;
-    --skeleton-lheight: 0px;
-    --skeleton-width: 0px;
+  --skeleton-gap: 0px;
+  --skeleton-lheight: 0px;
+  --skeleton-width: 0px;
+
+  --color-bg: #f5f5f5;
+  --color-text: #2a2a2a;
+  --color-table-border: #c9c9c9;
+  --color-bg-table-row-even: #efefef;
+  --color-table-bg-header: #ececec;
+}
+
+[data-theme="dark"] {
+  --color-bg: #2a2a2a;
+  --color-text: #ececec;
+  --color-table-border: #6e6e6e;
+  --color-bg-table-row-even: #333333;
+  --color-table-bg-header: #c2c2c2;
 }
 
 body {
-    font-family: "GoogleSans", "sans-serif";
-    box-sizing: border-box;
-    color: #353535;
-    background: #f8f8f8;
+  font-family: "GoogleSans", "sans-serif";
+  box-sizing: border-box;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
